@@ -1,9 +1,17 @@
 {
     "manifest_version": 3,
-    "name": "Leetcode Reminder",
-    "description": "Base Level Extension",
+    "name": "LeetCode Profile Viewer",
     "version": "1.0",
+    "description": "View your LeetCode profile data.",
+    "permissions": ["storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
     "action": {
-      "default_popup": "index.html"
-    }
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "https://leetcode.com/graphql/*"
+    ]
   }
+  

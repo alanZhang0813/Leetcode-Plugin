@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LeetCode Profile Viewer</title>
+  <script src="popup.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      text-align: left;
+    }
+    h1 {
+      text-align: center;
+    }
+    #stats {
+      margin-top: 10px;
+    }
+    #save-button {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>LeetCode Profile Viewer</h1>
+  <div>
+    <label for="username-input">LeetCode Username:</label><br>
+    <input type="text" id="username-input" placeholder="Enter your username"><br>
+    <button id="save-button">Save Username</button>
+  </div>
+  <div id="stats">
+    <p id="username-display"></p>
+    <p id="total-solved"></p>
+    <p id="easy-solved"></p>
+    <p id="medium-solved"></p>
+    <p id="hard-solved"></p>
+  </div>
+</body>
+</html>
